@@ -1,0 +1,36 @@
+<div style="margin-left: 100px">
+  <div *ngFor="let goal of custom_data">
+    <div
+      style="
+        border: 1px solid gray;
+        display: flex;
+        margin-top: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 15%;
+        "
+      >
+        <input type="checkbox" />
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          width: 85%;
+        "
+      >
+        <h2>{{ goal.title }}</h2>
+        <p>{{ goal.subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</div>
